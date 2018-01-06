@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Facotry</title>
+</head>
+<body>
+	<div class="">
+		<h1>Check on console</h1>
+		<input type="button" value="click class function" id='classFunc'>
+		<input type="button" value="click factory function" id='factoryFunc'>
+	</div>
+	<script src="./context.js"></script>
+	<script src="https://unpkg.com/history/umd/history.min.js"></script>
+	<script src="./history.js"></script>
+	<script>
+		const btnClass = document.querySelector('#classFunc');
+		const btnFactory = document.querySelector('#factoryFunc');
+		btnClass.addEventListener('click', sniffles.talk);
+		btnFactory.addEventListener('click', fluffy.talk);
+	</script>
+</body>
+</html>
