@@ -2,6 +2,4 @@
 
 ## Chapter! one
 
-Hello world and Max
-
-Add somthings
+Hello World
