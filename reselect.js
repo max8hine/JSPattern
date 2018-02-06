@@ -2,7 +2,7 @@ const { createSelector } = require('reselect');
 
 
 var state = {
-    a: 100
+  a: 100
 }
 
 var naiveSelector = state => state.a;
