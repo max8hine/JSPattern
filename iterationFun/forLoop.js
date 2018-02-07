@@ -3,19 +3,21 @@
  */
 
 function* foo() {
-  yield 1;
-  yield 2;
-}
-const arr1 = [1,2,3,4,5]
-
-for (let o of foo() ) {
-  console.log(o);
-  break; // closes iterator, triggers return
+	yield 1
+	yield 2
 }
 
-let arrPush = []
-for (let o of arr1) {
-  arrPush.push(o)
+const arr1 = [1, 2, 3, 4, 5]
+
+for (const o of foo()) {
+	console.log(o)
+	break
+	// closes iterator, triggers return
+}
+
+const arrPush = []
+for (const o of arr1) {
+	arrPush.push(o)
 }
 console.log(arrPush)
 
