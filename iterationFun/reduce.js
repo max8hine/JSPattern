@@ -9,7 +9,7 @@
   => returnValue
 */
 
-import fetch from 'node-fetch';
+import fetch from 'node-fetch'
 
 // An example for plain Array
 const array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -57,25 +57,23 @@ console.log(myReduce(array1))
 // Asynchronous Reduce in JavaScript
 // http://blog.bloomca.me/2018/01/27/asynchronous-reduce-in-javascript.html
 
-// timer mock
-const requestData = (link) => {
-	setTimeout(() => {
-		// console.log('from requetData', link)
-		link => link
-	}, 1000)
-}
+
+const fetchUrl = id => fetch('https://catappapi.herokuapp.com/users/', id)
+	.then(response => response.json())
+	.then(data => data.imageUrl)
 
 async function createLinks(links) {
 	const results = []
 	for (const link of links) {
-		const res = await requestData(link)
+		const res = await fetchUrl(link)
 		results.push(res)
 	}
 	console.log('from async', results)
 	return results
 }
 
-const links = ['url1', 'url2', 'url3', 'url4' ]
+const links = ['123', '124', '125', '126']
+
 createLinks(res => {
   console.log(res)
 })

@@ -4,12 +4,8 @@ async function party(value) {
 }
 
 const result = party('poop')
-result.then(res => console.log('hello', res))
+result.then(res => console.log(res))
 
-const quokka = {
-	isAwesome: true
-}
-console.log(quokka);
 // const notAarry = [1]
 
 // const callback = (value) => {
