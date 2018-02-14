@@ -1,5 +1,5 @@
 import fetch from 'node-fetch'
-// import co from 'co';
+import co from 'co'
 
 /* Iterators
 	An object is an iterator
@@ -82,15 +82,6 @@ console.log([...myIterable])
 
 console.log([...'abc'])
 
-const URI = 'https://jsonplaceholder.typicode.com/posts/1'
-// Promise
-/*
-fetch(URI)
-	.then(response => response.json())
-	.then(post => post.title)
-	.then(x => console.log('Title: ', x))
- */
-
 const run = (generator) => {
 	// 01 Call the generator, if it is and return an iterator
 	const iterator = generator()
@@ -110,7 +101,7 @@ const run = (generator) => {
 }
 
 // recursive function
-function co(generator) {
+function co2(generator) {
 	const iterator = generator()
 	function iterate(iteration) {
 		if (iteration.done) return iteration.value
@@ -122,12 +113,53 @@ function co(generator) {
 	// First run, to run the recursive function
 	return iterate(iterator.next())
 }
+
+const URI = 'https://jsonplaceholder.typicode.com/posts/2'
+
+
+fetch(URI)
+	.then(response => response.json())
+	.then((post) => {
+		console.log(post.title)
+		return post.title
+	})
+	.then((title) => {
+		console.log({ Title: title })
+	})
+
+
+
 co(function* fetchData() {
 	const uri = URI
 	const response = yield fetch(uri)
 	const post = yield response.json()
 	const { title } = post
+	console.log(title)
 	return title
 })
-	.catch(error => console.error(error.stack))
-	.then(x => console.log('run resulted in ', x))
+	.catch((error) => {
+		console.error(error)
+		return error
+	})
+	.then((x) => {
+		console.log(x)
+		return x
+	})
+
+co2(function* fetchData() {
+	const uri = URI
+	const response = yield fetch(uri)
+	const post = yield response.json()
+	const { title } = post
+	console.log(title)
+	return title
+})
+	.catch((error) => {
+		console.error(error)
+		return error
+	})
+	.then((x) => {
+		console.log(x)
+		return x
+	})
+

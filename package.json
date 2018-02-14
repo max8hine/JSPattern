@@ -10,8 +10,11 @@
     "start": "nodemon --exec babel-node generator.js"
   },
   "dependencies": {
+    "@fdaciuk/ajax": "^2.3.0",
     "co": "^4.6.0",
     "history": "^4.7.2",
+    "jquery": "^3.3.1",
+    "jsdom": "^11.6.2",
     "node-fetch": "^2.0.0",
     "react": "^16.2.0",
     "reselect": "^3.0.1"
