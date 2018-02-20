@@ -3,6 +3,7 @@ import path from 'path'
 
 const readFilePromise = fileName => new Promise((resolve, reject) => {
 	fs.readFile(fileName, (err, data) => {
+		// err ? reject(err) : resolve(data.toString)
 		if (err) {
 			reject(err)
 		} else {

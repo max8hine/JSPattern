@@ -1,5 +1,7 @@
 import fetch from 'node-fetch'
 import co from 'co'
+import fs from 'fs'
+import path from 'path'
 
 /* Iterators
 	An object is an iterator
@@ -58,6 +60,7 @@ console.log(
 	generatorFoo.next(25),
 )
 
+
 /* Iterables
 	An object is iterable if it defines its iteration behavior.
 	In order to be iterable, an object must implement the @@iterator method
@@ -79,8 +82,9 @@ for (const value of myIterable) {
 }
 
 console.log([...myIterable])
-
-console.log([...'abc'])
+// Spread Operator allows for iterables to be spread into smaller bits.
+// Strings are iterables, they are character arrays internally
+console.log([...'hello'])
 
 const run = (generator) => {
 	// 01 Call the generator, if it is and return an iterator
@@ -163,3 +167,56 @@ co2(function* fetchData() {
 		return x
 	})
 
+// .join will concatenate two path
+// .resolve will treat this as the rrot directory
+const fullPath1 = path.join(__dirname, '../data/data1.json')
+const fullPath2 = path.join(__dirname, '../data/data2.json')
+
+function toPromise(v) {
+	return new Promise((resolve, reject) => {
+		fs.readFile(v, { flag: 'r+', encoding: 'utf8' }, (error, data) => {
+			if (error) {
+				reject(error)
+			} else {
+				resolve(data)
+			}
+		})
+	})
+}
+
+function* readFile(list) {
+	const arr = []
+	for (const data of list) {
+		arr.push(yield toPromise(data))
+		console.log(typeof arr)
+	}
+	return Promise.all(arr).then(data => data)
+}
+
+
+// https://gist.github.com/domenic/5987999/revisions
+
+function iteratorOfPromisesForEach(iterator, callback) {
+	const snapshot = iterator.next()
+	if (snapshot.done) return Promise.resolve()
+	return snapshot.value
+		.then(callback)
+		.then(() => {
+			iteratorOfPromisesForEach(iterator, callback)
+		})
+}
+function iteratorOfPromisesForEach2(iterator, callback) {
+	let p = Promise.resolve()
+	for (const i of iterator) {
+		p = p.then(() => i).then(callback)
+	}
+	return p
+}
+
+iteratorOfPromisesForEach2(readFile([fullPath1, fullPath2]), file => {
+	console.log(file)
+})
+
+co(readFile([fullPath1, fullPath2])).then(x => {
+	console.log(x.toString())
+})
