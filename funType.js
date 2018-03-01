@@ -61,6 +61,11 @@ const pplConstructor = function (name, age, state) {
 }
 // Hey, Javascript, give me a new object
 const personAConstructor = new pplConstructor('kim', 27, 'SC')
+console.log(typeof personAConstructor)
+console.log(typeof pplConstructor())
+console.log(pplConstructor())
+
+
 console.log(personAConstructor.printPerson())
 
 /**
