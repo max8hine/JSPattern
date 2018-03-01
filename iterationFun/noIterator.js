@@ -12,9 +12,62 @@
 	To produce arrays so you can iterate over objects.
  */
 
-const number = [1, 2, 3, 4, 5]
-let sum = 0
+const number = [5, 4, 9, 2, 1]
+let goodSum = 0
+
 number.forEach((num) => {
-	sum += num
+	goodSum += num
 })
-console.log(sum)
+const bestSum = number.reduce((total, num) => total + num, 0)
+console.log(goodSum, bestSum)
+// accumulator, currentValue
+number.reduce((a, b) => {
+	console.log(a)
+	console.log(b)
+	console.log(a + b)
+
+	if (b > a) {
+		console.log(b)
+	} else {
+		console.log(a)
+	}
+	return b
+}, 0)
+
+const myFilter = number.filter(isEven => isEven % 2 !== 0)
+console.log(myFilter)
+number
+number.sort()
+number
+
+
+
+/* Filter() - modify exsiting array
+	 Syntax var newArray = arr.filter(callback[, thisArg])
+ */
+
+const s = 'It was a  dark and stormy night.'
+const words = s.split(/\W+/).filter(word => word.length)
+console.log(words)
+/* The sort() method sorts the elements of an array in place (In-place algorithm)
+	And returns the array
+	arr.sort([compareFunction])
+ */
+const words2 = words.sort((a, b) => a.length + b.length)
+words2
+
+
+
+
+const randomFilter = ['A', 'a', '1', '-']
+randomFilter.sort()
+randomFilter
+
+const objFilter = [{ x: 15, y: 9 }, { x: 8, y: 10 }]
+const compare = (a, b) => {
+	console.log(a)	
+	console.log(b)
+	return b.y + a.y
+}
+objFilter.sort(compare)
+objFilter

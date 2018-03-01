@@ -1,3 +1,5 @@
+// `this` is Primary expressions < Expressions and operators by category
+
 // http://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/
 
 /*
