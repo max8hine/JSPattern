@@ -1,0 +1,22 @@
+-
+	const alert = () => 'Does this really work?!'
+	const list = [
+		{ name: 'Fluffykins', species: 'rabbit', },
+		{ name: 'Caro',       species: 'dog', },
+		{ name: 'Hamilton',   species: 'fish', },
+		{ name: 'Harold',     species: 'cat', },
+		{ name: 'Ursula',     species: 'fish', },
+		{ name: 'Jimmy',      species: 'dog', },
+	]
+
+
+
+each item, i in list
+	-
+		const filteredAnimal = []
+		if (item.species === 'dog') {
+			filteredAnimal.push(item.name)
+		}
+	li= filteredAnimal + i
+
+p #{name}'s Pug Source code!
