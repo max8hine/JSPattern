@@ -33,7 +33,9 @@ console.log(
 )
 
 /**
-	Generator allow you to define an iterative algorithm
+	Generator return an iterator with Next Function
+	and allow you to define an iterative algorithm
+
 	by writing a single function which can maintain its own state.
 
 	A GeneratorFunction is a special type of function
@@ -53,6 +55,8 @@ function* foo() {
 	return x + y + z
 }
 const generatorFoo = foo()
+console.log(generatorFoo)
+
 console.log(
 	generatorFoo.next(),
 	generatorFoo.next(8),
@@ -131,7 +135,15 @@ fetch(URI)
 		console.log({ Title: title })
 	})
 
+const xx = co(function* fetchData() {
+	const uri = URI
+	const response = yield fetch(uri)
+	const post = yield response.json()
+	const { title } = post
+	return title
+})
 
+xx
 
 co(function* fetchData() {
 	const uri = URI

@@ -8,6 +8,8 @@ const port = process.env.PORT
 // Load View Engine
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
+
+
 // Route
 app.get('/', (req, res) => {
 	// res.send('Hello World')
@@ -24,6 +26,9 @@ app.get('/page-1', (req, res) => {
 	})
 })
 
+app.get('/page-2', (req, res) => {
+	res.render('page_2')
+})
 // Start Server
 app.listen(port, () => {
 	console.log(`Server Started on port ${port}`)

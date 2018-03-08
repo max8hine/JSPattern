@@ -7,10 +7,6 @@
 	Or of one of the built-in object types that has a constructor function.
 */
 
-/*
-	
-
-*/
 // Creating a user-defined object requires two steps:
 // Step 1: Define the object type by writing a function
 function Car(make, model, year) {
@@ -29,18 +25,22 @@ console.log(newCar)
 console.log(Car.prototype)
 
 // Example From FunFunFunction
-function Person(saying, shit) {
-	this.saying = saying
-	this.talkShit = function() {
-		return shit
+function Person(shit, saying) {
+	this.shit = shit
+	this.talking = function () {
+		return saying
 	}
 }
 
-Person.prototype.talk = function() {
-	return `I say ${this.saying}`
+Person.prototype.talk = function () {
+	return this.shit + ' ' + this.talking()
 }
 
-console.log(Person.constructor)
+const say = new Person('f*cking', 'good')
+console.log(
+	say,
+	say.talk(),
+)
 
 function aNew(constructor) {
 	// 1 - Create a new object
@@ -54,9 +54,14 @@ function aNew(constructor) {
 	return constructor.apply(obj, argsArray.slice(1)) || obj
 }
 
-const crockford = aNew(Person, 'Semicolans!!!Lone!', 'Funk')
+function ES6New(constructor, ...resArgs) {
+	const obj = {}
+	Object.setPrototypeOf(obj, constructor.prototype)
+	constructor.apply(obj, resArgs)
+	return obj
+}
+const crockford = ES6New(Person, 'f*cking', 'Good')
 console.log(crockford.talk())
-console.log(crockford.talkShit())
 
 
 

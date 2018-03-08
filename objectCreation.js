@@ -20,7 +20,7 @@ Object.setPrototypeOf(cat, animal)
 cat.talk()
 
 const bigCat = {
-	howl() { return this.sound.toUpperCase()},
+	howl() { return this.sound.toUpperCase() },
 }
 Object.setPrototypeOf(bigCat, cat)
 console.log(bigCat.howl())
@@ -41,7 +41,7 @@ bigCat.prototype = function whoami() {
 	on the constructed object.
  */
 
-// Prototype an object that delegate to other objects 
+// Prototype an object that delegate to other objects
 const munchkin = {
 	breed: 'munchkin',
 }
@@ -71,7 +71,53 @@ console.log(
 	Dog.prototype.breed, // Bulldog
 	Dog.prototype.Dname,	// undefined
 	Dog.breed, // undefined
-	Dog.Dname // undefined, nothing return here
+	Dog.Dname, // undefined, nothing return here
 )
 
 
+/* Object.create() - ES6 - Object.create(proto[, propertiesObject])
+	The Object.create() method
+	Creates a new object with the specified prototype
+	Object and properties
+ */
+
+// for an object
+const person = {
+	name: 'no-one',
+	isHuman: false,
+	printIntroduction() {
+		return `My name is ${this.name}. Am I human ${this.isHuman}`
+	},
+}
+
+const me = Object.create(person)
+// me.name = 'Max'
+// me.isHuman = true
+me
+
+console.log(
+	me,
+	me.__proto__,
+)
+
+me.__proto__.name = 'Robot'
+me.__proto__.isHuman = 'I think I am'
+console.log(
+	me,
+	me.__proto__,
+)
+
+function objCreate(o) {
+	function F() {}
+	F.prototype = o
+	return new F()
+}
+
+const me2 = objCreate(person)
+// me2.name = 'Xiaoguang'
+// me2.isHuman = true
+me2
+
+me2.__proto__.name = 'Xiaoguang2'
+me2.__proto__.isHuman = false
+console.log(me2.__proto__)
