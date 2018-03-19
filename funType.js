@@ -27,7 +27,7 @@ const animalFactory = {
 		const sound = 'bark'
 		const breed = 'Bull'
 		const category = 'animal'
-	}
+	},
 }
 
 /*= ==========  or object in to __proto__  ============ */
@@ -52,7 +52,7 @@ const pplConstructor = function (name, age, state) {
 	const gender = 'male'
 	this.name = name
 	this.age = age
-	this.state = state	
+	this.state = state
 	return {
 		printPerson() {
 		 return `${this.name}, ${gender}, ${this.age}, ${this.state} from a Constructor`
@@ -70,6 +70,17 @@ console.log(personAConstructor instanceof pplConstructor)
 console.log(typeof pplConstructor())
 console.log(pplConstructor())
 
+const Store = function () {
+	return this.extend.apply(this, arguments)
+}
+Store.prototype.extend = function (...theArgs) {
+	console.log(arguments, theArgs)
+	return theArgs
+}
+
+const newStore = new Store([1, 2, 3, 4, 5])
+
+console.log(newStore)
 
 // Constructor Function
 
@@ -85,8 +96,8 @@ pplProto.prototype.printPerson = function () {
 	console.log(`${this.name}, ${this.age}, ${this.city} from a Prototype Object`)
 }
 
-const ConstructorFun2 = function() {
-	this.Cons1 = function() { return 'Cons1'}
+const ConstructorFun2 = function () {
+	this.Cons1 = function () { return 'Cons1' }
 	this.Cons2 = function () { return 'Cons2' }
 	this.Cons3 = function () { return 'Cons3' }
 }
@@ -163,12 +174,12 @@ console.log(personAClass.printPerson())
 // class
 class ClassCar {
 	drive() {
-		console.log('Vroom!');
+		console.log('Vroom!')
 	}
 }
 
-const car1 = new ClassCar();
-console.log(car1.drive());
+const car1 = new ClassCar()
+console.log(car1.drive())
 
 const AutoMaker = {
 	Car(args) {
@@ -177,11 +188,11 @@ const AutoMaker = {
 
 	bundle: {
 		premium: {
-			drive() { return 'Vrooom!'},
-			getOptions() { return ['leather', 'wood', 'pearl',]}
+			drive() { return 'Vrooom!' },
+			getOptions() { return ['leather', 'wood', 'pearl' ] },
 		},
 		old: {},
-	}
+	},
 }
 
 console.log(AutoMaker.Car('premium').drive())
@@ -190,23 +201,23 @@ console.log(AutoMaker.Car('premium').drive())
 function ConstructorCar() { }
 
 ConstructorCar.prototype.drive = function () {
-	console.log('Vroom!');
+	console.log('Vroom!')
 };
 
-const car2 = new ConstructorCar();
-console.log(car2.drive());
+const car2 = new ConstructorCar()
+console.log(car2.drive())
 
 
 // factory
 const proto = {
 	drive() {
-		console.log('Vroom!');
-	}
-};
-
-function factoryCar() {
-	return Object.create(proto);
+		console.log('Vroom!')
+	},
 }
 
-const car3 = factoryCar();
-console.log(car3.drive());
+function factoryCar() {
+	return Object.create(proto)
+}
+
+const car3 = factoryCar()
+console.log(car3.drive())
