@@ -13,5 +13,6 @@ module.exports = {
         "no-multiple-empty-lines": 0,
         "no-restricted-syntax": 0,
         "fun-names": 0,
+        "no-underscore-dangle": 0
     }
 };

@@ -50,37 +50,29 @@ whoami2
 
 const pplConstructor = function (name, age, state) {
 	const gender = 'male'
-	this.name = name
-	this.age = age
-	this.state = state
-	return {
-		printPerson() {
+	this.name = name,
+	this.age = age,
+	this.state = state,
+	this.printPerson = function() {
 		 return `${this.name}, ${gender}, ${this.age}, ${this.state} from a Constructor`
-		},
+	},
+	this.echoPerson = function() {
+		return `${this.name}, ${gender}, ${this.age}, ${this.state} from a Constructor`
 	}
 }
 
 const personAConstructor = new pplConstructor('kim', 27, 'SC')
+personAConstructor
+console.log(personAConstructor.printPerson())
 
-console.log(personAConstructor.__proto__.name)
-console.log(personAConstructor.__proto__.printPerson)
-console.log(personAConstructor.name)
+
+console.log(personAConstructor.__proto__)
+pplConstructor.prototype.extend = function() {
+	return this
+}
+console.log(personAConstructor.__proto__)
+
 console.log(personAConstructor instanceof pplConstructor)
-
-console.log(typeof pplConstructor())
-console.log(pplConstructor())
-
-const Store = function () {
-	return this.extend.apply(this, arguments)
-}
-Store.prototype.extend = function (...theArgs) {
-	console.log(arguments, theArgs)
-	return theArgs
-}
-
-const newStore = new Store([1, 2, 3, 4, 5])
-
-console.log(newStore)
 
 // Constructor Function
 
@@ -189,7 +181,7 @@ const AutoMaker = {
 	bundle: {
 		premium: {
 			drive() { return 'Vrooom!' },
-			getOptions() { return ['leather', 'wood', 'pearl' ] },
+			getOptions() { return ['leather', 'wood', 'pearl'] },
 		},
 		old: {},
 	},
@@ -202,7 +194,7 @@ function ConstructorCar() { }
 
 ConstructorCar.prototype.drive = function () {
 	console.log('Vroom!')
-};
+}
 
 const car2 = new ConstructorCar()
 console.log(car2.drive())
