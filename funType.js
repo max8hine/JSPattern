@@ -68,9 +68,12 @@ console.log(personAConstructor.printPerson())
 
 console.log(personAConstructor.__proto__)
 pplConstructor.prototype.extend = function() {
-	return this
+	return this.name
 }
 console.log(personAConstructor.__proto__)
+console.log(personAConstructor.extend())
+console.log(personAConstructor.name)
+
 
 console.log(personAConstructor instanceof pplConstructor)
 
