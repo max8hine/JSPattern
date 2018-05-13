@@ -67,3 +67,30 @@ const allP = Promise.all([result1, result2]).then((dataList) => {
 	})
 	console.log(a)
 })
+
+function artificialPromise() {
+	return new Promise((resolve, reject) => {
+		resolve({
+			action: 'hello',
+			payload: 'world',
+			user: 'max'
+		})
+		// reject({ message: 'artificial error message', code: 41 })
+	})
+}
+
+artificialPromise()
+	.then((value) => {
+		if (!value.user) return Promise.reject('User not found')
+		return function() {
+			return value
+		}
+	})
+	.catch((error) => {
+		console.log(error)
+		error ? error : 'make an error'
+		return error
+	})
+	.then((value) => {
+		console.log(value())
+	})

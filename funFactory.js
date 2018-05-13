@@ -2,18 +2,21 @@
 // When it’s not a constructor function or class,
 // it’s called a factory function.
 
-// 01 - Contructor Function in the Factory way
+// 01 - Constructor Function in the Factory way
 function Car(opt) {
 	this.doors = opt.doors || 4
 	this.state = opt.state || 'Brand New'
 	this.color = opt.color || 'Silver'
 }
+Car.prototype = function sayIt() {
+	return `I have a ${this.state} car!`
+}
 
-const x = new Car({doors: 5, state: 'New', color: "Blue"})
+const x = new Car({ doors: 5, state: 'New', color: 'Blue' })
 console.log(
-	'instance: ' + (x instanceof Car),
-	'proto: ' + x.__proto__,
-	'value: ' + x
+	`instance: ${(x instanceof Car)}`,
+	`proto: ${x.sayIt}`,
+	`value: ${x.color}`,
 )
 
 
