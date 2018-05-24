@@ -13,6 +13,9 @@ module.exports = {
         "no-multiple-empty-lines": 0,
         "no-restricted-syntax": 0,
         "fun-names": 0,
-        "no-underscore-dangle": 0
+        "no-underscore-dangle": 0,
+        "no-unused-expression": 0,
+        "func-names": 0,
+        "prefer-arrow-callback": 0,
     }
 };
