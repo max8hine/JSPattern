@@ -1,6 +1,9 @@
-import express from 'express'
-import path from 'path'
-import './config/config'
+const express = require('express')
+const path = require('path')
+const debug = require('debug')('http')
+require('./config/config')
+
+debug('booting %o My App')
 
 // Init App
 const app = express()
@@ -9,10 +12,16 @@ const port = process.env.PORT
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
 
+app.use(function (req, res, next) {
+	debug(`${req.method} ${req.url}`)
+	next()
+})
+
 
 // Route
 app.get('/', (req, res) => {
 	// res.send('Hello World')
+	debug(`${req.method} ${req.url}`)
 	res.render('index', {
 		tittle: 'PUG HOME',
 	})
