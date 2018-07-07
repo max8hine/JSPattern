@@ -21,23 +21,23 @@ Foo2(2, CallBack)
 
 /**  Classic Asynchronous Function */
 // - Asynchronous Function
-const lazyAdd = a => b => a + b
-const result = lazyAdd(4) // A Closure, b => a + b, is a callback
-console.log(result(6))
-// in callback way
-const lazyAddCB = (a, cb) => (b) => {
-	// Outer Layer Closure, wait for the data of a
-	console.log(a)
-	console.log(b)
-	return cb(a, b)
-	// setTimeout(() => cb(1, 6), 2000)
-}
-const result2 = lazyAddCB(7, (x, y) => x + y)
-console.log(result2(2))
+// const lazyAdd = a => b => a + b
+// const result = lazyAdd(4) // A Closure, b => a + b, is a callback
+// console.log(result(6))
+// // in callback way
+// const lazyAddCB = (a, cb) => (b) => {
+// 	// Outer Layer Closure, wait for the data of a
+// 	console.log(a)
+// 	console.log(b)
+// 	// setTimeout(() => cb(1, 6), 13000)
+// 	return cb(a, b)
+// }
+// const result2 = lazyAddCB(7, (x, y) => x + y)
+// console.log(result2(2))
 
-// - Synchronous Add Function
-const add = (a, b) => a + b
-console.log(add(4, 8))
+// // - Synchronous Add Function
+// const add = (a, b) => a + b
+// console.log(add(4, 8))
 
 function asyncTask(taskDescription) {
 	console.log('before ' + taskDescription)

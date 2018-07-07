@@ -14,7 +14,6 @@
     "async": "^2.6.0",
     "axios": "^0.18.0",
     "co": "^4.6.0",
-    "data2xml": "^1.2.5",
     "express": "^4.16.2",
     "history": "^4.7.2",
     "jsdom": "^11.7.0",
@@ -36,7 +35,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
     "jest": "^22.1.4",
-    "nodemon": "^1.14.12",
+    "nodemon": "^1.17.5",
     "react-test-renderer": "^16.2.0"
   }
 }

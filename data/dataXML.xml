@@ -1,0 +1,37 @@
+<account href="https://your-subdomain.recurly.com/v2/accounts/1">
+  <adjustments href="https://your-subdomain.recurly.com/v2/accounts/1/adjustments"/>
+  <billing_info href="https://your-subdomain.recurly.com/v2/accounts/1/billing_info"/>
+  <invoices href="https://your-subdomain.recurly.com/v2/accounts/1/invoices"/>
+  <redemptions href="https://your-subdomain.recurly.com/v2/accounts/1/redemptions"/>
+  <subscriptions href="https://your-subdomain.recurly.com/v2/accounts/1/subscriptions"/>
+  <transactions href="https://your-subdomain.recurly.com/v2/accounts/1/transactions"/>
+  <account_code>1</account_code>
+  <state>active</state>
+  <username>verena1234</username>
+  <email>verena@example.com</email>
+  <cc_emails>bob@example.com,susan@example.com</cc_emails>
+  <first_name>Verena</first_name>
+  <last_name>Example</last_name>
+  <company_name>New Company Name</company_name>
+  <vat_number nil="nil"/>
+  <tax_exempt type="boolean">false</tax_exempt>
+  <address>
+    <address1>123 Main St.</address1>
+    <address2 nil="nil"/>
+    <city>San Francisco</city>
+    <state>CA</state>
+    <zip>94105</zip>
+    <country>US</country>
+    <phone nil="nil"/>
+  </address>
+  <accept_language nil="nil"/>
+  <has_live_subscription type="boolean">true</has_live_subscription>
+  <has_active_subscription type="boolean">true</has_active_subscription>
+  <has_future_subscription type="boolean">false</has_future_subscription>
+  <has_canceled_subscription type="boolean">false</has_canceled_subscription>
+  <has_past_due_invoice type="boolean">false</has_past_due_invoice>
+  <hosted_login_token>96e74bd5e14d18e6da463a0d638a2621</hosted_login_token>
+  <created_at type="datetime">2016-07-08T20:59:43Z</created_at>
+  <updated_at type="datetime">2016-07-11T17:56:24Z</updated_at>
+  <closed_at nil="nil"/>
+</account>

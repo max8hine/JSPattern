@@ -59,8 +59,8 @@ const pplConstructor = function (name, age, state) {
 	this.echoPerson = function() {
 		return `${this.name}, ${gender}, ${this.age}, ${this.state} from a Constructor`
 	}
-}
 
+}
 const personAConstructor = new pplConstructor('kim', 27, 'SC')
 personAConstructor
 console.log(personAConstructor.printPerson())
