@@ -1,24 +1,32 @@
-// reject is callback function that get carried out after the promise is rejected.
-
-// throw will prioritise completing the resolver function(this function will run immediately).
-// 
-
 function timeout(duration) {
-	return new Promise(function(resolve) {
-		setTimeout(resolve, duration);
-	});
+	return new Promise(function (resolve, reject) {
+		if (!duration) return reject(new Error('missing duration value'))
+		return setTimeout(() => resolve('success'), duration)
+	})
 }
 
+function logResolve(v) { console.log(v) }
+function logReject(err) { console.log(`Error: ${err}`) }
+
 timeout(1000)
-	.then(function(_, reject) {
-		reject('en')
+	.then(() => Promise.reject(new Error('en')))
+	.catch((e) => { console.log('cached an error: ', e) })
+
+// timeout(10)
+// 	.then(logResolve)
+// 	.catch(logReject)
+Promise.resolve()
+	.then(async () => {
+		try {
+			const result = await timeout()
+			return result
+		} catch (e) { throw e }
 	})
-	.catch(function(e) {
-		console.log('catched an error: ',e);
-	});
+	.then((v) => {
+		console.log(v)
+		return v
+	})
+	.catch(logReject)
+	.finally(() => { console.log('DONE') })
 
-const newPromise = () => new Promise(function(resolve, reject) {
-	false ? resolve('resolve some value') : reject('reject an error')
-})
-
-newPromise().then(v => console.log('there is ', v)).catch(e=>console.log('there is ', e));
+/* END */
