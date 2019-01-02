@@ -13,7 +13,7 @@ for (let i = 0; i < 100000; i += 1) {}
 console.log(Date.now() - t)
 
 function fn() {
-	console.log(Date.now() - t)
+  console.log(Date.now() - t)
 }
 
 setTimeout(fn, 500)

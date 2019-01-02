@@ -4,13 +4,10 @@
  */
 
 function Tree(name) {
-	this.name = name
+  this.name = name
 }
 
 const theTree = new Tree('Redwood')
-console.log(
-	theTree,
-	theTree.constructor.name,
-)
+console.log(theTree, theTree.constructor.name)
 
 console.log(theTree.constructor === Tree)

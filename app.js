@@ -1,29 +1,28 @@
 const express = require('express')
 const path = require('path')
 const debug = require('debug')('http')
-require('./config/config')
+const pug = require('pug')
 
 debug('booting %o My App')
 
 // Init App
 const app = express()
-const port = process.env.PORT
+const port = 3000
 // Load View Engine
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
 
 app.use(function (req, res, next) {
 	debug(`${req.method} ${req.url}`)
-	next()
+	next();
 })
-
 
 // Route
 app.get('/', (req, res) => {
 	// res.send('Hello World')
 	debug(`${req.method} ${req.url}`)
 	res.render('index', {
-		tittle: 'PUG HOME',
+		tittle: 'PUG HOME'
 	})
 })
 
@@ -31,7 +30,7 @@ app.get('/page-1', (req, res) => {
 	// res.send('Hello World')
 	res.render('page_1', {
 		tittle: 'PUG PAGE 1',
-		name: 'Timothy',
+		name: 'Timothy'
 	})
 })
 

@@ -1,7 +1,7 @@
 const parallel = require('async/parallel')
 async function party(value) {
-	const action = await value
-	return action
+  const action = await value
+  return action
 }
 
 const result = party('poop')
@@ -9,22 +9,24 @@ result.then(res => console.log(res))
 
 console.log('I will')
 
-parallel([
-	function (callback) {
-		setTimeout(function () {
-			callback(null, 'one');
-		}, 200);
-	},
-	function (callback) {
-		setTimeout(function () {
-			callback(null, 'two');
-		}, 100);
-	}
-],
-	// optional callback
-	function (err, results) {
-		console.log(results)
-	});
+parallel(
+  [
+    function(callback) {
+      setTimeout(function() {
+        callback(null, 'one')
+      }, 200)
+    },
+    function(callback) {
+      setTimeout(function() {
+        callback(null, 'two')
+      }, 100)
+    }
+  ],
+  // optional callback
+  function(err, results) {
+    console.log(results)
+  }
+)
 // const notAarry = [1]
 
 // const callback = (value) => {
@@ -39,7 +41,6 @@ parallel([
 // }
 
 // pushArray(2, callback)
-
 
 // const After2Secs = v =>
 // 	new Promise((resolve) => {

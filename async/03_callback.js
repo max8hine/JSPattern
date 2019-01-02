@@ -40,13 +40,11 @@ Foo2(2, CallBack)
 // console.log(add(4, 8))
 
 function asyncTask(taskDescription) {
-	console.log('before ' + taskDescription)
-	setTimeout(function () {
-		console.log('this is an async task: ' + taskDescription)
-	}, Math.random() * 100)
-	console.log('after' + taskDescription)
+  console.log('before ' + taskDescription)
+  setTimeout(function() {
+    console.log('this is an async task: ' + taskDescription)
+  }, Math.random() * 100)
+  console.log('after' + taskDescription)
 }
 
 asyncTask('hello word')
-
-

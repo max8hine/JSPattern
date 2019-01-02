@@ -4,21 +4,21 @@
  */
 
 class Mammal {
-	constructor(sound) {
-		// Using underscore as a convention
-		// to indicate that this is a private member
-		this._sound = sound
-	}
-	talk() {
-		return this._sound
-	}
+  constructor(sound) {
+    // Using underscore as a convention
+    // to indicate that this is a private member
+    this._sound = sound
+  }
+  talk() {
+    return this._sound
+  }
 }
 
 class Dog extends Mammal {
-	constructor() {
-		// super calls constructor of the inherited class
-		super('woffeliwofffff')
-	}
+  constructor() {
+    // super calls constructor of the inherited class
+    super('woffeliwofffff')
+  }
 }
 const fluffykins = new Mammal('woof')
 const Bulldog = new Dog()
@@ -28,7 +28,9 @@ Bulldog
 
 const x = fluffykins.talk()
 x
-const y = Dog.prototype.talk.bind({
-	_sound: 'Roar',
-})().toUpperCase()
+const y = Dog.prototype.talk
+  .bind({
+    _sound: 'Roar'
+  })()
+  .toUpperCase()
 y

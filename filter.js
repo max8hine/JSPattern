@@ -69,8 +69,14 @@ const list = [
     startdate: '2017-04-24T00:00:00',
     title: 'Project 02'
   }
-];
+]
 const searchText = '4'
-const matchesFilter = new RegExp(searchText, 'i');
-const filteredProject = list.filter( u => !searchText || matchesFilter.test(u.categoryname) || matchesFilter.test(u.managername) || matchesFilter.test(u.priority));
-console.log(filteredProject);
+const matchesFilter = new RegExp(searchText, 'i')
+const filteredProject = list.filter(
+  u =>
+    !searchText ||
+    matchesFilter.test(u.categoryname) ||
+    matchesFilter.test(u.managername) ||
+    matchesFilter.test(u.priority)
+)
+console.log(filteredProject)

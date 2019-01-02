@@ -13,4 +13,3 @@ const param = querystring.stringify(obj)
 const param2 = querystring.stringify(obj, ', ', ': ')
 console.log(param)
 console.log(param2)
-

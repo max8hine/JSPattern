@@ -6,6 +6,8 @@ const page1 = path.resolve(__dirname, 'page_1.pug')
 const compiledFunc = pug.renderFile(page1, { name: 'Timothy' })
 compiledFunc
 
-const compileByPug = (pug.compile('a(href=\'google.com\') Google | | a(href=\'google.com\') MAX'))()
+const compileByPug = pug.compile(
+  "a(href='google.com') Google | | a(href='google.com') MAX"
+)()
 
 compileByPug

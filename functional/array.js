@@ -1,8 +1,6 @@
 const array1 = ['a', 'b', 'c']
 const array2 = ['d', 'e', 'f']
 
-
-
 // [immutable] concatenates
 const newArr1 = array1.concat(array2)
 newArr1
@@ -24,12 +22,8 @@ const newArr2 = array1.slice().reverse() // using slice to create a new array
 newArr2
 array1
 // ES6 variant
-const newArr3 = array1.reduceRight(
-	(a, c) => (a.push(c), a),
-	[],
-)
+const newArr3 = array1.reduceRight((a, c) => (a.push(c), a), [])
 newArr3
-
 
 // Using object to express an Array
 array1

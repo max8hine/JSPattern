@@ -15,23 +15,23 @@
 const number = [5, 4, 9, 2, 1]
 let goodSum = 0
 
-number.forEach((num) => {
-	goodSum += num
+number.forEach(num => {
+  goodSum += num
 })
 const bestSum = number.reduce((total, num) => total + num, 0)
 console.log(goodSum, bestSum)
 // accumulator, currentValue
 number.reduce((a, b) => {
-	console.log(a)
-	console.log(b)
-	console.log(a + b)
+  console.log(a)
+  console.log(b)
+  console.log(a + b)
 
-	if (b > a) {
-		console.log(b)
-	} else {
-		console.log(a)
-	}
-	return b
+  if (b > a) {
+    console.log(b)
+  } else {
+    console.log(a)
+  }
+  return b
 }, 0)
 
 const myFilter = number.filter(isEven => isEven % 2 !== 0)
@@ -39,8 +39,6 @@ console.log(myFilter)
 number
 number.sort()
 number
-
-
 
 /* Filter() - modify exsiting array
 	 Syntax var newArray = arr.filter(callback[, thisArg])
@@ -56,18 +54,15 @@ console.log(words)
 const words2 = words.sort((a, b) => a.length + b.length)
 words2
 
-
-
-
 const randomFilter = ['A', 'a', '1', '-']
 randomFilter.sort()
 randomFilter
 
 const objFilter = [{ x: 15, y: 9 }, { x: 8, y: 10 }]
 const compare = (a, b) => {
-	console.log(a)	
-	console.log(b)
-	return b.y + a.y
+  console.log(a)
+  console.log(b)
+  return b.y + a.y
 }
 objFilter.sort(compare)
 objFilter

@@ -18,43 +18,42 @@
 // call();
 // obj, ...args
 function call(func, array) {
-	let getArr = [];
-	console.log(arguments[0])
-	for(let i = 1; i < arguments.length; i++) {
-		getArr.push(arguments[i]);
-	}
-	console.log(getArr);
+  let getArr = []
+  console.log(arguments[0])
+  for (let i = 1; i < arguments.length; i++) {
+    getArr.push(arguments[i])
+  }
+  console.log(getArr)
 }
 
 function cb(arg) {
-	console.log(arg);
+  console.log(arg)
 }
 
 call(cb.toString(), '1', '2', '3')
 
-const person = {  
-  name: "Brendan Eich",
+const person = {
+  name: 'Brendan Eich',
   hello: function(thing) {
-    console.log(this.name + " says hello " + thing);
+    console.log(this.name + ' says hello ' + thing)
   }
 }
 // const boundHello = function(thing) {
 // 	return person.hello.call(person, thing);
 // }
 
-// var boundHello = function(thing) { 
+// var boundHello = function(thing) {
 // 	return person.hello.call(person, thing);
 // }
 
-// boundHello("world");  
+// boundHello("world");
 
-
-const bind = function(func, thisValue) {  
+const bind = function(func, thisValue) {
   return function() {
-    return func.apply(thisValue, arguments);
+    return func.apply(thisValue, arguments)
   }
 }
 // const bind = (func, thisValue) => () => func.apply(thisValue, arguments);
 
-var boundHello = bind(person.hello, person);  
-boundHello(["world", 'Yeah!']) // "Brendan Eich says hello world"  
+var boundHello = bind(person.hello, person)
+boundHello(['world', 'Yeah!']) // "Brendan Eich says hello world"
