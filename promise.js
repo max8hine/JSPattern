@@ -16,16 +16,8 @@ timeout(1000)
 // 	.then(logResolve)
 // 	.catch(logReject)
 Promise.resolve()
-	.then(async () => {
-		try {
-			const result = await timeout()
-			return result
-		} catch (e) { throw e }
-	})
-	.then((v) => {
-		console.log(v)
-		return v
-	})
+	.then(() => timeout(10))
+	.then(() => timeout(10000))
 	.catch(logReject)
 	.finally(() => { console.log('DONE') })
 

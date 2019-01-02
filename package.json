@@ -10,32 +10,20 @@
     "start": "nodemon app"
   },
   "dependencies": {
-    "@babel/core": "^7.0.0-beta.44",
     "async": "^2.6.1",
     "axios": "^0.18.0",
     "co": "^4.6.0",
-    "express": "^4.16.2",
+    "express": "^4.16.4",
     "history": "^4.7.2",
-    "jsdom": "^11.7.0",
-    "node-fetch": "^2.0.0",
-    "prompts": "^0.1.4",
-    "pug": "^2.0.0-rc.4",
-    "react": "^16.2.0",
-    "request": "^2.85.0",
     "reselect": "^3.0.1",
     "xml2js": "^0.4.19"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.44",
-    "@babel/preset-env": "^7.0.0-beta.44",
     "deep-freeze-strict": "^1.1.1",
-    "eslint": "^4.17.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.6.1",
-    "jest": "^22.1.4",
-    "nodemon": "^1.17.5",
-    "react-test-renderer": "^16.2.0"
-  }
+    "nodemon": "^1.18.9"
+  },
+  "browserslist": [
+    "defaults",
+    "ie 11"
+  ]
 }
