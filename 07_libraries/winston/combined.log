@@ -1,0 +1,222 @@
+2019-01-10T04:37:57.256Z [31merror[39m: New Error
+2019-01-10T04:37:57.881Z [31merror[39m: New Error
+2019-01-10T04:37:59.388Z [31merror[39m: New Error
+2019-01-10T04:37:59.474Z [31merror[39m: New Error
+2019-01-10T04:38:38.347Z [31merror[39m: New Error
+2019-01-10T04:38:41.749Z [31merror[39m: New Error
+2019-01-10T04:38:43.042Z [31merror[39m: New Error
+2019-01-10T04:38:43.414Z [31merror[39m: New Error
+2019-01-10T04:38:43.622Z [31merror[39m: New Error
+2019-01-10T04:38:43.744Z [31merror[39m: New Error
+2019-01-10T04:38:44.048Z [31merror[39m: New Error
+2019-01-10T04:38:44.304Z [31merror[39m: New Error
+2019-01-10T04:38:44.582Z [31merror[39m: New Error
+2019-01-10T04:38:44.757Z [31merror[39m: New Error
+2019-01-10T04:38:44.910Z [31merror[39m: New Error
+2019-01-10T04:38:45.122Z [31merror[39m: New Error
+2019-01-10T04:38:45.599Z [31merror[39m: New Error
+2019-01-10T04:39:03.591Z [31merror[39m: New Error
+2019-01-10T04:39:08.499Z [31merror[39m: New Error
+2019-01-10T04:39:09.737Z [31merror[39m: New Error
+2019-01-10T04:39:12.089Z [31merror[39m: New Error
+2019-01-10T04:39:13.332Z [31merror[39m: New Error
+2019-01-10T04:39:13.476Z [31merror[39m: New Error
+2019-01-10T04:39:13.619Z [31merror[39m: New Error
+2019-01-10T04:39:13.764Z [31merror[39m: New Error
+2019-01-10T04:39:16.306Z [31merror[39m: New Error
+2019-01-10T04:39:24.886Z [31merror[39m: New Error
+2019-01-10T04:39:25.232Z [31merror[39m: New Error
+2019-01-10T04:39:26.802Z [31merror[39m: New Error
+2019-01-10T04:39:29.815Z [31merror[39m: New Error
+2019-01-10T04:39:31.404Z [31merror[39m: New Error
+2019-01-10T04:39:31.547Z [31merror[39m: New Error
+2019-01-10T04:39:32.170Z [31merror[39m: New Error
+2019-01-10T04:39:32.408Z [31merror[39m: New Error
+2019-01-10T04:39:33.736Z [31merror[39m: New Error
+2019-01-10T04:39:34.000Z [31merror[39m: New Error
+2019-01-10T04:39:34.124Z [31merror[39m: New Error
+2019-01-10T04:39:34.480Z [31merror[39m: New Error
+2019-01-10T04:39:34.767Z [31merror[39m: New Error
+2019-01-10T04:39:34.963Z [31merror[39m: New Error
+2019-01-10T04:40:21.768Z [31merror[39m: New Error
+2019-01-10T04:40:22.744Z [31merror[39m: l is not defined
+2019-01-10T04:40:22.962Z [31merror[39m: lo is not defined
+2019-01-10T04:40:23.126Z [31merror[39m: log is not defined
+2019-01-10T04:40:23.326Z [31merror[39m: logg is not defined
+2019-01-10T04:40:23.489Z [31merror[39m: logge is not defined
+2019-01-10T04:40:23.733Z [31merror[39m: New Error
+2019-01-10T04:40:24.783Z [31merror[39m: New Error
+2019-01-10T04:40:25.091Z [31merror[39m: New Error
+2019-01-10T04:40:25.425Z [31merror[39m: colors[Colorizer.allColors[lookup]] is not a function
+2019-01-10T04:40:26.086Z [31merror[39m: Cannot create property 'Symbol(level)' on string ''
+2019-01-10T04:40:26.814Z [31merror[39m: Cannot create property 'Symbol(level)' on string 'i'
+2019-01-10T04:40:26.966Z [31merror[39m: Cannot create property 'Symbol(level)' on string 'in'
+2019-01-10T04:40:27.316Z [31merror[39m: Cannot create property 'Symbol(level)' on string 'info'
+2019-01-10T04:40:28.996Z [31merror[39m: Cannot create property 'Symbol(level)' on string 'info'
+2019-01-10T04:40:29.363Z [31merror[39m: Cannot create property 'Symbol(level)' on string 'info'
+2019-01-10T04:40:29.503Z [32minfo[39m: 
+2019-01-10T04:40:29.504Z [31merror[39m: New Error
+2019-01-10T04:40:30.238Z [32minfo[39m: i
+2019-01-10T04:40:30.238Z [31merror[39m: New Error
+2019-01-10T04:40:30.351Z [32minfo[39m: in
+2019-01-10T04:40:30.351Z [31merror[39m: New Error
+2019-01-10T04:40:30.595Z [32minfo[39m: info
+2019-01-10T04:40:30.596Z [31merror[39m: New Error
+2019-01-10T04:40:30.985Z [32minfo[39m: info 
+2019-01-10T04:40:30.985Z [31merror[39m: New Error
+2019-01-10T04:40:31.148Z [32minfo[39m: info l
+2019-01-10T04:40:31.149Z [31merror[39m: New Error
+2019-01-10T04:40:31.349Z [32minfo[39m: info lo
+2019-01-10T04:40:31.350Z [31merror[39m: New Error
+2019-01-10T04:40:31.493Z [32minfo[39m: info log
+2019-01-10T04:40:31.494Z [31merror[39m: New Error
+2019-01-10T04:40:33.251Z [32minfo[39m: info log
+2019-01-10T04:40:33.252Z [31merror[39m: New Error
+2019-01-10T04:41:10.531Z [32minfo[39m: info log
+2019-01-10T04:41:10.532Z [31merror[39m: New Error
+2019-01-10T04:41:10.694Z [32minfo[39m: info log
+2019-01-10T04:41:10.695Z [31merror[39m: New Error
+2019-01-10T04:41:10.931Z [32minfo[39m: info log
+2019-01-10T04:41:10.931Z [31merror[39m: New Error
+2019-01-10T04:41:11.194Z [32minfo[39m: info log
+2019-01-10T04:41:11.195Z [31merror[39m: New Error
+2019-01-10T04:41:37.742Z [31merror[39m: New Error
+2019-01-10T04:41:47.791Z [31merror[39m: New Error
+2019-01-10T04:42:06.537Z [31merror[39m: New Error
+2019-01-10T04:42:14.355Z [31merror[39m: New Error
+2019-01-10T04:42:16.666Z [31merror[39m: New Error
+2019-01-10T04:42:16.907Z [31merror[39m: New Error
+2019-01-10T04:42:53.804Z [31merror[39m: 👑New Error
+2019-01-10T04:42:56.840Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:08.474Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:08.904Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:09.137Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:09.256Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:09.380Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:11.077Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:11.309Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:11.461Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:11.627Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:12.298Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:12.562Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:12.756Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:12.871Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:12.966Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:15.227Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:15.938Z [31merror[39m: 👑 New Error
+2019-01-10T04:43:16.092Z [31merror[39m: 👑 New Error
+2019-01-10T04:44:06.876Z [31merror[39m: 👑 New Error
+2019-01-10T04:44:17.362Z [31merror[39m: 👑 New Error
+2019-01-10T04:44:17.701Z [31merror[39m: 👑 New Error
+2019-01-10T04:44:36.083Z [31merror[39m 👑 New Error : Error: 👑 New Error
+    at Object.<anonymous> (/Users/maxshine/Documents/workspace/js/07_libraries/winston/logger.js:26:15)
+    at Module.e (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:11695)
+    at K (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:178521)
+    at /Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:180566
+    at module.exports.r.a (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:180712)
+    at Module.e (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:10720)
+    at Object.quokkaStackTraceMarker (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/runners/node/quokka@1.0.0/initializer.js:14:5588)
+    at r.quokkaStackTraceMarker [as _onStart] (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/runners/node/quokka@1.0.0/initializer.js:14:5629)
+    at r.start (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/server.js:20:1680)
+    at g.in:run (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/server.js:16:28843)
+    at WebSocket.<anonymous> (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/server.js:16:27598)
+    at WebSocket.emit (events.js:182:13)
+    at WebSocket.EventEmitter.emit (domain.js:442:20)
+    at Receiver.ontext (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/ws/lib/WebSocket.js:841:10)
+    at /Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/ws/lib/Receiver.js:536:18
+    at /Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/ws/lib/Receiver.js:368:7
+    at /Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/ws/lib/PerMessageDeflate.js:249:5
+    at afterWrite (_stream_writable.js:480:3)
+    at onwrite (_stream_writable.js:471:7)
+    at InflateRaw.afterTransform (_stream_transform.js:94:3)
+    at Zlib.processCallback (zlib.js:625:8)
+2019-01-10T04:44:38.829Z [31merror[39m 👑 New Error : Error: 👑 New Error
+    at Object.<anonymous> (/Users/maxshine/Documents/workspace/js/07_libraries/winston/logger.js:26:15)
+    at Module.e (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:11695)
+    at K (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:178521)
+    at /Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:180566
+    at module.exports.r.a (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:180712)
+    at Module.e (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:10720)
+    at Object.quokkaStackTraceMarker (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/runners/node/quokka@1.0.0/initializer.js:14:5588)
+    at r.quokkaStackTraceMarker [as _onStart] (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/runners/node/quokka@1.0.0/initializer.js:14:5629)
+    at r.start (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/server.js:20:1680)
+    at g.in:run (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/server.js:16:28843)
+    at WebSocket.<anonymous> (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/server.js:16:27598)
+    at WebSocket.emit (events.js:182:13)
+    at WebSocket.EventEmitter.emit (domain.js:442:20)
+    at Receiver.ontext (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/ws/lib/WebSocket.js:841:10)
+    at /Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/ws/lib/Receiver.js:536:18
+    at /Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/ws/lib/Receiver.js:368:7
+    at /Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/ws/lib/PerMessageDeflate.js:249:5
+    at afterWrite (_stream_writable.js:480:3)
+    at onwrite (_stream_writable.js:471:7)
+    at InflateRaw.afterTransform (_stream_transform.js:94:3)
+    at Zlib.processCallback (zlib.js:625:8)
+2019-01-10T04:44:39.476Z [31merror[39m: 👑 New Error
+2019-01-10T04:44:39.721Z [31merror[39m: 👑 New Error
+2019-01-10T04:44:39.951Z [31merror[39m: 👑 New Error
+2019-01-10T04:44:40.166Z [31merror[39m: 👑 New Error
+2019-01-10T04:44:43.119Z [31merror[39m: 👑 New Error
+2019-01-10T04:44:45.284Z [31merror[39m: 👑 New Error
+2019-01-10T04:45:09.716Z [32minfo[39m: info log
+2019-01-10T04:45:09.717Z [31merror[39m: 👑 New Error
+2019-01-10T04:45:34.155Z [32minfo[39m: info log
+2019-01-10T04:45:34.155Z [31merror[39m: 👑 New Error
+2019-01-10T04:45:40.322Z [32minfo[39m: info log
+2019-01-10T04:45:40.323Z [31merror[39m: 👑 New Error
+2019-01-10T04:46:00.776Z [32minfo[39m: info log
+2019-01-10T04:46:00.776Z [31merror[39m: 👑 New Error 
+2019-01-10T04:46:01.021Z [32minfo[39m: info log
+2019-01-10T04:46:01.021Z [31merror[39m: 👑 New Error 1
+2019-01-10T04:46:01.813Z [32minfo[39m: info log
+2019-01-10T04:46:01.814Z [31merror[39m: 👑 New Error 1
+2019-01-10T04:46:19.837Z [32minfo[39m: info log
+2019-01-10T04:46:19.837Z [31merror[39m 👑 New Error 1 : Error: 👑 New Error 1
+    at Object.<anonymous> (/Users/maxshine/Documents/workspace/js/07_libraries/winston/logger.js:27:15)
+    at Module.e (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:11695)
+    at K (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:178521)
+    at /Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:180566
+    at module.exports.r.a (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:180712)
+    at Module.e (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:10720)
+    at Object.quokkaStackTraceMarker (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/runners/node/quokka@1.0.0/initializer.js:14:5588)
+    at r.quokkaStackTraceMarker [as _onStart] (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/runners/node/quokka@1.0.0/initializer.js:14:5629)
+    at r.start (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/server.js:20:1680)
+    at g.in:run (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/server.js:16:28843)
+    at WebSocket.<anonymous> (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/server.js:16:27598)
+    at WebSocket.emit (events.js:182:13)
+    at WebSocket.EventEmitter.emit (domain.js:442:20)
+    at Receiver.ontext (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/ws/lib/WebSocket.js:841:10)
+    at /Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/ws/lib/Receiver.js:536:18
+    at /Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/ws/lib/Receiver.js:368:7
+    at /Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/ws/lib/PerMessageDeflate.js:249:5
+    at afterWrite (_stream_writable.js:480:3)
+    at onwrite (_stream_writable.js:471:7)
+    at InflateRaw.afterTransform (_stream_transform.js:94:3)
+    at Zlib.processCallback (zlib.js:625:8)
+2019-01-10T04:46:20.322Z [32minfo[39m: info log
+2019-01-10T04:46:20.323Z [31merror[39m 👑 New Error 1 : Error: 👑 New Error 1
+    at Object.<anonymous> (/Users/maxshine/Documents/workspace/js/07_libraries/winston/logger.js:27:15)
+    at Module.e (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:11695)
+    at K (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:178521)
+    at /Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:180566
+    at module.exports.r.a (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:180712)
+    at Module.e (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/esm/esm.js:1:10720)
+    at Object.quokkaStackTraceMarker (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/runners/node/quokka@1.0.0/initializer.js:14:5588)
+    at r.quokkaStackTraceMarker [as _onStart] (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/runners/node/quokka@1.0.0/initializer.js:14:5629)
+    at r.start (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/server.js:20:1680)
+    at g.in:run (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/server.js:16:28843)
+    at WebSocket.<anonymous> (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/server.js:16:27598)
+    at WebSocket.emit (events.js:182:13)
+    at WebSocket.EventEmitter.emit (domain.js:442:20)
+    at Receiver.ontext (/Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/ws/lib/WebSocket.js:841:10)
+    at /Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/ws/lib/Receiver.js:536:18
+    at /Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/ws/lib/Receiver.js:368:7
+    at /Users/maxshine/.vscode/extensions/wallabyjs.quokka-vscode-1.0.174/dist/wallaby/node_modules/ws/lib/PerMessageDeflate.js:249:5
+    at afterWrite (_stream_writable.js:480:3)
+    at onwrite (_stream_writable.js:471:7)
+    at InflateRaw.afterTransform (_stream_transform.js:94:3)
+    at Zlib.processCallback (zlib.js:625:8)
+2019-01-10T04:46:37.711Z [32minfo[39m: info log
+2019-01-10T04:46:54.951Z [32minfo[39m: info log
+2019-01-10T04:47:36.275Z undefined: info log
+2019-01-10T04:47:37.848Z [32minfo[39m: info log
