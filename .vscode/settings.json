@@ -5,4 +5,10 @@
 	"[json]": {
 		"editor.formatOnSave": true
 	},
+	"[css]": {
+		"editor.formatOnSave": true
+	},
+	"[markdown]": {
+		"editor.formatOnSave": true
+	},
 }
