@@ -25,5 +25,5 @@ const optimizedFactorial = (n, accumulator = 1) => {
 // factorial(2, 12)
 // factorial(1, 24)
 // 24
-const optResult = optimizedFactorial(4)
-optResult
+// const optResult = optimizedFactorial(4)
+// optResult
