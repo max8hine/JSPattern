@@ -11,7 +11,7 @@
     "start": "nodemon app"
   },
   "dependencies": {
-    "async": "^2.6.1",
+    "async": "^2.6.4",
     "axios": "^1.6.0",
     "co": "^4.6.0",
     "express": "^4.17.3",
