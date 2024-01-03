@@ -11,21 +11,21 @@
     "start": "nodemon app"
   },
   "dependencies": {
-    "async": "^2.6.4",
+    "async": "^3.2.5",
     "axios": "^1.6.0",
     "co": "^4.6.0",
     "express": "^4.17.3",
-    "history": "^4.7.2",
+    "history": "^5.3.0",
     "lodash": "^4.17.19",
     "pug": "^3.0.2",
-    "reselect": "^3.0.1",
+    "reselect": "^5.0.1",
     "winston": "^3.1.0",
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
     "deep-freeze-strict": "^1.1.1",
     "nodemon": "^3.0.2",
-    "prettier": "1.15.3"
+    "prettier": "3.1.1"
   },
   "browserslist": [
     "defaults",
